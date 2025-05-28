@@ -1,122 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paga tu Factura de Energía | Aire Energía</title>
-  
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      height: 100%;
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(135deg, #0072ce, #00b140); /* Fondo con colores corporativos de Aire */
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100%;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .image {
-      max-width: 90%;
-      max-height: 60vh;
-      margin-bottom: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    .button-container {
-      width: 100%;
-      max-width: 500px;
-    }
-
-    .button {
-      padding: 12px 25px;
-      font-size: 18px;
-      color: white;
-      background: linear-gradient(45deg, #0072ce, #00b140);
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: transform 0.3s, box-shadow 0.3s;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .button:hover {
-      background: linear-gradient(45deg, #00a0e3, #00c95c);
-      transform: translateY(-3px);
-    }
-
-    .icon {
-      margin-left: 10px;
-      width: 30px;
-      height: 30px;
-      animation: pulse 1.5s infinite ease-in-out;
-    }
-
-    @keyframes pulse {
-      0%, 100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.1);
-      }
-    }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aire Frío - Servicios de Aire Acondicionado</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://images.pexels.com/photos/123123/pexels-photo-123123.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+        header {
+            background-color: rgba(0, 119, 182, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+        nav {
+            background-color: rgba(2, 62, 138, 0.9);
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #00b4d8;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: rgba(3, 4, 94, 0.9);
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
 
-<!-- Google tag (gtag.js) -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17120170945"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <header>
+        <h1>Aire Frío</h1>
+        <p>Expertos en instalación y mantenimiento de aire acondicionado</p>
+    </header>
 
-  gtag('config', 'AW-17120170945');
-</script>
+    <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
 
-  
-  <div class="container">
-    <img 
-      src="factura.png" 
-      alt="Pago de factura Aire Energía" 
-      class="image"
-    >
-    <h1 style="color: #fff; margin-bottom: 20px; font-weight: bold;">
-      ¡Paga tu factura de energía fácil y rápido!
-    </h1>
-    <p style="color: #fff; margin-bottom: 40px; font-weight: bold;">
-      Evita filas y retrasos. Paga en línea desde la comodidad de tu hogar.
-    </p>
-    <a href="https://caribesoolfct.com/Pagar?b=eyJlbmNyeXB0ZWQiOnRydWV9" class="button">
-        Pagar factura en línea
-        <!-- Icono de rayo -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-          <path d="M13 2L3 14h9l-1 8L21 10h-9l1-8z"/>
-        </svg>
-    </a>
-  </div>
+    <div class="section" id="servicios">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Instalación de aires acondicionados split y centrales</li>
+            <li>Mantenimiento preventivo y correctivo</li>
+            <li>Recarga de gas refrigerante</li>
+            <li>Diagnóstico y reparación</li>
+        </ul>
+    </div>
+
+    <div class="section" id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>En Aire Frío contamos con más de 10 años de experiencia ofreciendo soluciones en climatización para hogares y empresas. Trabajamos con marcas reconocidas y garantizamos un servicio rápido y de calidad.</p>
+    </div>
+
+    <div class="section" id="contacto">
+        <h2>Contacto</h2>
+        <p>📞 Teléfono: +52 555 123 4567</p>
+        <p>📱 WhatsApp: +52 555 765 4321</p>
+        <p>📧 Correo: contacto@airefrio.com</p>
+        <p>📍 Ciudad de México y alrededores</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Aire Frío - Todos los derechos reservados</p>
+    </footer>
 
 </body>
 </html>
